@@ -62,6 +62,18 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "build-prep5",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/csharp-prep/Prep5/Prep5.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build-articulate-unit02",
             "command": "dotnet",
             "type": "process",

@@ -62,6 +62,18 @@
             "stopAtEntry": false
         },
         {
+            "name": "C# Prep 5",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-prep5",
+            "program": "${workspaceFolder}/csharp-prep/Prep5/bin/Debug/net6.0/Prep5.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/csharp-prep/Prep5",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+        {
             "name": "Articulate - Unit02 (Dice)",
             "type": "coreclr",
             "request": "launch",
