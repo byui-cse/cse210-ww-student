@@ -13,6 +13,8 @@ namespace Unit03.Game
         private Seeker _seeker = new Seeker();
         private TerminalService _terminalService = new TerminalService();
 
+        private const bool IS_DEBUG_MODE = true;
+
         /// <summary>
         /// Constructs a new instance of Director.
         /// </summary>
@@ -38,7 +40,11 @@ namespace Unit03.Game
         /// </summary>
         private void GetInputs()
         {
-            _terminalService.WriteText(_hider._location.ToString());
+            if (IS_DEBUG_MODE)
+            {
+                _terminalService.WriteText($"DEBUG MESSAGE: {_hider._location.ToString()}");
+            }
+
             int location = _terminalService.ReadNumber("\nEnter a location [1-1000]: ");
             _seeker.MoveLocation(location);
         }
